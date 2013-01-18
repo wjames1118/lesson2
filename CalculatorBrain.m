@@ -39,14 +39,14 @@ if (_programStack == nil) _programStack = [[NSMutableArray alloc] init];
     
 }
 
-//  -(double)popOperand
+ -(double)popOperand
 
-//   {
-//    NSNumber *operandObject = [self.operandStack lastObject];
-//    if (operandObject)[self.operandStack removeLastObject];
-//    return [operandObject doubleValue];
+  {
+   NSNumber *operandObject = [self.operandStack lastObject];
+   if (operandObject)[self.operandStack removeLastObject];
+   return [operandObject doubleValue];
 
-//   }
+  }
 
 
 - (double)performOperation:(NSString *)operation;
